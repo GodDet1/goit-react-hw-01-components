@@ -15,14 +15,7 @@ const FriendsList = props => {
 };
 
 FriendsList.propTypes = {
-  friends: PropTypes.array(
-    PropTypes.object({
-      avatar: PropTypes.string,
-      name: PropTypes.string,
-      isOnline: PropTypes.boolean,
-      id: PropTypes.number,
-    })
-  ),
+  friends: PropTypes.array,
 };
 
 export default FriendsList;
