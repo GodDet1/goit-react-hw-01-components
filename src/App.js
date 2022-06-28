@@ -4,6 +4,8 @@ import user from './data/UsersData/user';
 import statisticsData from './data/StatistacsData/data';
 import FriendsList from 'components/FriendsList';
 import friends from './data/FriendData/friends';
+import TransactionsHistory from 'components/TransactionsHistory';
+import transactions from './data/transactions/transactions';
 
 function App() {
   return (
@@ -25,6 +27,10 @@ function App() {
       {/* 3rd task */}
 
       <FriendsList friends={friends} />
+
+      {/* 4th task */}
+
+      <TransactionsHistory items={transactions} />
     </div>
   );
 }

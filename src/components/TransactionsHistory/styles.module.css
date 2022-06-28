@@ -1,0 +1,33 @@
+table {
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  background-color: cyan;
+  border-spacing: 1px;
+
+  border-radius: 5px;
+
+  border-collapse: collapse;
+
+  box-shadow: 3px 3px 7px 3px #000000;
+}
+
+.transaction_item {
+  background-color: #fff;
+}
+
+.transaction_item:nth-child(2n) {
+  background-color: rgb(245, 245, 245);
+}
+
+td {
+  width: 150px;
+
+  text-align: center;
+
+  text-transform: capitalize;
+}
+
+td:not(:last-child) {
+  border-right: 1px solid lightgray;
+}
