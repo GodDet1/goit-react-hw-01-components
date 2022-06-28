@@ -1,16 +1,21 @@
-function Description() {
-  return (
-    <div className="description">
-      <img
-        src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
-        alt="User avatar"
-        className="avatar"
-      />
-      <p className="name">Petra Marica</p>
-      <p className="tag">@pmarica</p>
-      <p className="location">Salvador, Brasil</p>
-    </div>
-  );
-}
+import { PropTypes } from 'prop-types';
+
+import styles from './styles.module.css';
+
+const Description = ({ username, tag, location, avatar }) => (
+  <div className={styles.description}>
+    <img src={avatar} alt="User avatar" className="avatar" />
+    <p className={styles.name}>{username}</p>
+    <p className={styles.tag}>@{tag}</p>
+    <p className={styles.location}>{location}</p>
+  </div>
+);
+
+Description.propTypes = {
+  userName: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  avatar: PropTypes.string,
+};
 
 export default Description;

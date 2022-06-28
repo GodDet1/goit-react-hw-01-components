@@ -1,0 +1,8 @@
+.quantity {
+  font-weight: 700;
+}
+
+.label {
+  text-transform: capitalize;
+  color: gray;
+}

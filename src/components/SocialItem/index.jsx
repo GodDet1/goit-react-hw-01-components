@@ -1,13 +1,19 @@
-import React from "react";
+import React from 'react';
+import { PropTypes } from 'prop-types';
+import styles from './styles.module.css';
 
-function SocialItem(props) {
-  console.log(props);
+function SocialItem({ name, count }) {
   return (
     <li>
-      <span className="label">Followers</span>
-      <span className="quantity">1000</span>
+      <span className={styles.label}>{name}</span>
+      <span className={styles.quantity}>{count}</span>
     </li>
   );
 }
+
+SocialItem.propTypes = {
+  name: PropTypes.string,
+  count: PropTypes.number,
+};
 
 export default SocialItem;
