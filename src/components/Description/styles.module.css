@@ -1,5 +1,5 @@
 .description {
-  padding: 20px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,7 +10,8 @@
 img {
   width: 200px;
   border-radius: 50%;
-  background-color: red;
+
+  background-color: lightgray;
 }
 
 .name {
@@ -23,20 +24,20 @@ img {
 
 .tag {
   margin-bottom: 0px;
+  margin-top: 7px;
 
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 2px;
 
   color: gray;
 }
 
 .location {
   margin-bottom: 0px;
+  margin-top: 7px;
 
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 2px;
 
   color: gray;
 }

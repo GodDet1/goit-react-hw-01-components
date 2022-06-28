@@ -1,0 +1,29 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 85px;
+  height: 85px;
+  background-color: var(--color);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.item:first-child {
+  border-bottom-left-radius: 9px;
+}
+.item:last-child {
+  border-bottom-right-radius: 9px;
+}
+
+.label {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.percentage {
+  font-size: 20px;
+  color: white;
+}
