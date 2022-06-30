@@ -20,8 +20,8 @@ const StatisticsItem = ({ statlabel, statpercentage }) => {
 };
 
 StatisticsItem.propsType = {
-  label: PropsType.string,
-  percentage: PropsType.number,
+  label: PropsType.string.isRequired,
+  percentage: PropsType.number.isRequired,
 };
 
 export default StatisticsItem;

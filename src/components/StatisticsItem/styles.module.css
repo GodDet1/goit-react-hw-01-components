@@ -11,13 +11,6 @@
   box-sizing: border-box;
 }
 
-.item:first-child {
-  border-bottom-left-radius: 9px;
-}
-.item:last-child {
-  border-bottom-right-radius: 9px;
-}
-
 .label {
   color: white;
   margin-bottom: 10px;

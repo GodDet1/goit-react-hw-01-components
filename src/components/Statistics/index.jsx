@@ -5,14 +5,14 @@ import styles from './styles.module.css';
 
 const Statistics = ({ title, stats }) => (
   <section className={styles.statistics}>
-    <h2 className={styles.title}>{title}</h2>
+    {title ? <h2 className={styles.title}>{title}</h2> : ''}
 
     <ul className={styles.stat_list}>
-      {stats.map(stat => (
+      {stats.map(({ id, label, percentage }) => (
         <StatisticsItem
-          key={stat.id}
-          statlabel={stat.label}
-          statpercentage={stat.percentage}
+          key={id}
+          statlabel={label}
+          statpercentage={percentage}
         />
       ))}
     </ul>
@@ -20,11 +20,10 @@ const Statistics = ({ title, stats }) => (
 );
 
 Statistics.propsType = {
-  title: PropsType.string,
   stats: PropsType.shape({
-    id: PropsType.string,
-    label: PropsType.string,
-    percentage: PropsType.number,
+    id: PropsType.string.isRequired,
+    label: PropsType.string.isRequired,
+    percentage: PropsType.number.isRequired,
   }),
 };
 
