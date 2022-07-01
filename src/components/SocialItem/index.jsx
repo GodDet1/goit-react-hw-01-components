@@ -12,8 +12,8 @@ function SocialItem({ name, count }) {
 }
 
 SocialItem.propTypes = {
-  name: PropTypes.string,
-  count: PropTypes.number,
+  name: PropTypes.string.isRequired,
+  count: PropTypes.number.isRequired,
 };
 
 export default SocialItem;
